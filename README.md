@@ -51,7 +51,7 @@ flowchart LR
 | `frontend` | Vue.js 웹 (로그인·회원가입, Unity WebGL 연동) |
 | `unity` | Unity 프로젝트 패키지 |
 | `unity_WebGL` | 웹에 올리는 WebGL 빌드 |
-| `backend` | 회원·서비스 API |
+| `backend` | Spring Boot 회원·서비스 API (JWT 인증) |
 
 ---
 
@@ -60,7 +60,8 @@ flowchart LR
 | 구분 | 기술 |
 |---|---|
 | **Metaverse** | Unity, C#, Unity WebGL |
-| **Frontend** | Vue.js, Bootstrap-Vue, Axios |
+| **Frontend** | Vue.js, Bootstrap-Vue, Axios, vue-unity-webgl |
+| **Backend** | Spring Boot, Spring Security, JWT, JPA·QueryDSL, Swagger |
 | **Collaboration** | GitLab (front·back·develop 브랜치 전략), Jira |
 
 ---
@@ -71,6 +72,12 @@ flowchart LR
 - 캐릭터 이동·대화·퍼즐 미니게임 등 메타버스 공간 구현 참여
 - Vue.js 웹 로그인 페이지 구현
 - Unity WebGL 빌드를 웹 서비스에 연동하는 작업 협업
+
+---
+
+## 📖 코드 가이드
+
+프론트엔드·백엔드 구조, 로그인과 Unity 연동 흐름, 지금 다시 본다면 고칠 점(코드 리뷰)을 [docs/CODE_GUIDE.md](docs/CODE_GUIDE.md)에 정리했습니다.
 
 ---
 
